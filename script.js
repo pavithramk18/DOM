@@ -75,18 +75,52 @@ console.log("DOM");
 //This is applicable only if you have an class name in html elements
 //output of this is array type
 
-var res=document.getElementsByClassName("container");
- console.log(res);
+// var res=document.getElementsByClassName("container");
+//  console.log(res);
 
-//  0
+// o/p: 0
 // : 
 // div.container
 // length
 // : 
 // 1
 
+//document.getElementsByTagName()
+//This will be applicable only if you have tag selector and the output will be same as array type
 
+// var ele=document.getElementsByTagName("div");
+// console.log(ele);
 
+// o/p:
+// 0
+// : 
+// div.container
+// 1
+// : 
+// div.container
+// 2
+// : 
+// div#demo
+// demo
+// : 
+// div#demo
+// length
+// : 
+// 3
+
+//document.querySelector()
+//This method is mainly used to find the first occurance of the tag in the html file ex:if we have 3
+ //div tags it will return the only first div tag and the output will be html element
+
+ //var ele=document.querySelector("p");
+ //console.log(ele);
+
+ //document.querySelector()
+//This method is mainly used to find the all occurance of the tag in the html file ex:if we have 3
+ //div tags it will all div tag and the output will be array
+
+ //var ele=document.querySelectorAll("p");
+ //console.log(ele);
 
 
 
