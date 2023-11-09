@@ -125,18 +125,43 @@ console.log("DOM");
 
  //Task:To check the valid Email ID
 
- function emailValidation(){
-    var result=document.getElementById("email").value;
-    console.log(result);
-    if(result=="pavithram.kumaresan@gmail.com")
-    {
-        console.log("Valid User");
-    }
-    else{
-        console.log("Invalid User");
-    }
+//  function emailValidation(){
+//     var result=document.getElementById("email").value;
+//     console.log(result);
+//     if(result=="pavithram.kumaresan@gmail.com")
+//     {
+//         console.log("Valid User");
+//     }
+//     else{
+//         console.log("Invalid User");
+//     }
     
- }
+//  }
 
+
+//Task:
+//Firstname,Lastname,Email,Phonenumber
+
+function createlabel(tagname,content,attrname,attrvalue){
+    var label=document.createElement(tagname);
+    label.setAttribute(attrname,attrvalue);
+    label.innerHTML=content;
+    
+    return label;
+}
+
+var result=createlabel("email","Enter Your Email","for","emailid");
+var firstname=createlabel("fname","Enter Your Firstname","for","fname");
+var lastname=createlabel("lastname","Enter Your Lastname","for","lname");
+var phonenumber=createlabel("email","Enter Your MobileNumber","for","pno");
+
+
+
+document.body.append(result,firstname,lastname,phonenumber);
+
+   
+    
+
+   
 
 
