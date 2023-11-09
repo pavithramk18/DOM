@@ -64,7 +64,7 @@ console.log("DOM");
 
 //document.getElementById()
 //This method is applicable only if you have id element in the HTML File.Element should be in the 
-//html File.It returns the HTML element and we can extract in js file
+//html File.It returns the whole HTML element and we can extract in js file
 //Note:If no element present it will return null
 
 
@@ -73,7 +73,18 @@ console.log("DOM");
 
 //document.getElementsByClassName()
 //This is applicable only if you have an class name in html elements
-//output of this is array type 
+//output of this is array type
+
+var res=document.getElementsByClassName("container");
+ console.log(res);
+
+//  0
+// : 
+// div.container
+// length
+// : 
+// 1
+
 
 
 
