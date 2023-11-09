@@ -123,5 +123,20 @@ console.log("DOM");
  //console.log(ele);
 
 
+ //Task:To check the valid Email ID
+
+ function emailValidation(){
+    var result=document.getElementById("email").value;
+    console.log(result);
+    if(result=="pavithram.kumaresan@gmail.com")
+    {
+        console.log("Valid User");
+    }
+    else{
+        console.log("Invalid User");
+    }
+    
+ }
+
 
 
